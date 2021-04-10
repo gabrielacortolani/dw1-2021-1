@@ -27,42 +27,46 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 html { /* Elemento raiz */
-    font-size: 20px;
+    font-size:20px;
 }
 div {
-    padding: 20px;
-    border: 2px solid black;
-    margin: 10px;
-    text-algin: center;
+    padding:20px;
+    border:2px solid black;
+    margin:10px;
+    text-align: center;
 }
 #container {
     background-color: goldenrod;
-    font-size: 16pt;
-    height: 600px;
-    width: 70vw; /* 70% da largura da janela */
+    font-size:16pt;
+    height:600px;
+    width:70vw; /* 70% da largura da janela */
 }
 #box1 {
     background-color: cadetblue;
-    font-size: 30pt;
-    height: 20%; /* 20% do tamanho do pai */
+    font-size:30pt;
+    height:20%; /* 20% do tamanho do pai */
 }
 #box2 {
     background-color: hotpink;
     /* Tamanho da fonte do pai: 16pt. 1.5em = 1.5*16pt = 24 pt*/
-    font-size: 1,5em; /* Equivale a 150% */
-    width: 50%; /* Metade da largura do pai */
-    height: 12uh; /* 12% da altura da janela (e não do pai!) */
+    font-size:1.5em; /* Equivale a 150% */
+    width:50%; /* Metade da largura do pai */
+    height:12uh; /* 12% da altura da janela (e não do pai!) */
 }
 #box3 {
     background-color: mediumpurple;
-    font-size: 150%; /* Equivale a 1.5em */
+    font-size:150%; /* Equivale a 1.5em */
 }
 #box3-1 {
-    font-size: 0.5em; /* Metade do tamanho da fonte do pai */
+    font-size:0.5em; /* Metade do tamanho da fonte do pai */
 }
 #box4 {
     background-color: aquamarine;
-    font-size: 3rem; /* 3 * 20px do tamanho de fonte do elemento raiz = 60px */
-    width: 40vw; /* 40% da largura da janela (e não do pai!) */
-    
+    font-size:3rem; /* 3 * 20px do tamanho de fonte do elemento raiz = 60px */
+    width:40vw; /* 40% da largura da janela (e não do pai!) */
+ 
+}
+/* Regras de classe começam com um ponto . */
+.borda-dif {
+    border: 2px dashed red;
 }
