@@ -50,6 +50,36 @@ a:hover { /* Mouse passando em cima do link */
 header {
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social{
+    background-color: transparent; /*Tira a cor de fundo*/
+    display: flex;
+    align-items: center;
+}
+
+#social img{
+    width: 32px;
+}
+
+
+#social a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+#social a span{
+    margin-left: 6px;
+    display: none;/* Esconder o texto dos links*/
+}
+
+#social a:hover span{
+    display: inline; /* Mostra novamente o texto ao passar o mouse*/
 }
 
 nav ul li {
@@ -60,6 +90,27 @@ nav ul li {
 nav {
     background-color: var(--cor-secundaria); /* Cor do fundo */
     color: var(--cor-texto-claro); /*Cor do texto */
+}
+
+#menu{
+    padding: 0 20px;
+}
+
+#menu li{
+    margin: 10px 0;
+}
+
+#menu a{
+    height: 100%;
+    padding: 10px;
+    color: #ffffff;
+    transition: 300ms;
+    background-color: var(--cor-secundaria);
+}
+
+#menu a:hover{
+    filter: brightness(0.8); /*Diminui o brilho em 20%, deixando mais escuro */
+    text-decoration: none;
 }
 
 #content {
@@ -174,7 +225,7 @@ footer{
     display: flex;
     flex-direction: row;
     /* Dá espaço automaticamente entre os itens de um flexbox*/
-    align-content: space-around;
+    justify-content: space-around;
 }
 
 footer a{
@@ -184,6 +235,15 @@ footer a{
 footer ul li{
     display: inline-block; /*Coloca os itens de uma lista na horizontal*/
     padding: 0 12px;
-    border-right: 1px solid #ffffff;
-    
+    border-right: 2px solid #ffffff;  
+}
+
+/*Tirar a borda direita do último li */
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer img{
+    width: 200px;
+    height: 100%;
 }
