@@ -405,7 +405,12 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
-    .destaque > h1 > a {
+
+    header img{
+        max-width: 100%;
+    }
+    .destaque > h1 > a, individual h1 {
         font-size: 2rem;
     }
+    
 }
